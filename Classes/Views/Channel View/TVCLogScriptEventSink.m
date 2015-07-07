@@ -157,10 +157,9 @@
 	/* Update the display information. */
 	NSString *display = [[imageNode style] display];
 
+    // Make an image in the chat log visible if not already
 	if ([display isEqualIgnoringCase:@"none"]) {
 		display = NSStringEmptyPlaceholder;
-	} else {
-		display = @"none";
 	}
 	
 	[[imageNode style] setDisplay:display];
